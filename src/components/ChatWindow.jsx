@@ -289,6 +289,126 @@ const ChatWindow = ({ onClose }) => {
           "🎯 We build customized solutions that align perfectly with your business objectives, ensuring maximum impact and results.",
           "🚀 Share your unique requirements, and we’ll provide a personalized, high-quality solution tailored just for you."
         ]
+      },
+      {
+        patterns: ['web development', 'build websites', 'custom websites', 'develop web apps', 'responsive websites'],
+        responses: [
+          '🌐 We specialize in web development, creating fast, secure, and responsive websites tailored to your business needs.',
+          '💻 Our web development services include e-commerce platforms, single-page applications, and CMS-based websites using modern frameworks.',
+          '🚀 Technologies we use:\n• Frontend: React.js, Angular\n• Backend: Node.js, Express.js\n• Database: PostgreSQL, MongoDB.'
+        ]
+      },
+      {
+        patterns: ['app development', 'mobile apps', 'build apps', 'iOS apps', 'Android apps'],
+        responses: [
+          '📱 We design and develop mobile apps for Android and iOS platforms, focusing on usability and performance.',
+          '💡 Whether native (Kotlin, Swift) or cross-platform (Flutter, React Native), we build apps tailored to your goals.',
+          '🚀 From prototyping to deployment, our app development process ensures your ideas turn into feature-rich mobile applications.'
+        ]
+      },
+      {
+        patterns: ['USSD', 'USSD development', 'USSD code', 'mobile services', 'offline access'],
+        responses: [
+          '📞 We offer USSD development for businesses to reach customers without requiring internet access.',
+          '📲 Use USSD to improve accessibility for mobile banking, surveys, and customer engagement.',
+          '🚀 Our solutions include custom USSD codes designed to match your business needs and scale effortlessly.'
+        ]
+      },
+      {
+        patterns: ['UI/UX design', 'user interface', 'user experience', 'app design', 'custom design'],
+        responses: [
+          '🎨 Our UI/UX design services focus on creating user-friendly and visually appealing interfaces.',
+          '💡 We craft intuitive designs that enhance usability and align with your brand identity.',
+          '🚀 From wireframes to final prototypes, our designs ensure an exceptional user experience, using tools like Figma and Adobe XD.'
+        ]
+      },
+      {
+        patterns: ['API integration', 'integrate APIs', 'payment gateway', 'connect systems', 'API services'],
+        responses: [
+          '🔗 We provide seamless API integration for systems like payment gateways (MPesa, PayPal) and third-party services.',
+          '💡 Enhance your app’s capabilities with RESTful or GraphQL API integrations tailored to your requirements.',
+          '🚀 Whether for payments, analytics, or communication, our API solutions streamline processes efficiently.'
+        ]
+      },
+      {
+        patterns: ['DevOps', 'server maintenance', 'deployment', 'cloud services', 'infrastructure management'],
+        responses: [
+          '🔧 We offer DevOps solutions, including deployment, server maintenance, and infrastructure optimization.',
+          '💡 Our cloud services (AWS, DigitalOcean) ensure your applications are scalable and highly available.',
+          '🚀 With CI/CD pipelines and automated workflows, we streamline your deployment process for maximum efficiency.'
+        ]
+      },
+      {
+        patterns: ['web design', 'WordPress websites', 'create WordPress', 'design websites', 'WordPress development'],
+        responses: [
+          '🖌️ We create stunning WordPress websites that are visually appealing and easy to manage.',
+          '💡 Our WordPress design services include custom themes, plugins, and SEO optimization for a unique online presence.',
+          '🚀 From personal blogs to business websites, we ensure responsive and user-friendly WordPress designs tailored to your brand.'
+        ]
+      },
+      {
+        patterns: ['quality assurance', 'QA testing', 'cybersecurity', 'performance testing', 'secure apps'],
+        responses: [
+          '🔒 We provide thorough QA testing to ensure your application is secure, reliable, and bug-free.',
+          '⚙️ Our performance testing services identify bottlenecks to improve speed and scalability.',
+          '🚀 Cybersecurity is a priority—we safeguard your systems with vulnerability assessments and penetration testing.'
+        ]
+      },
+      {
+        patterns: ['blockchain', 'smart contracts', 'crypto development', 'blockchain solutions', 'decentralized apps'],
+        responses: [
+          '🔗 Our blockchain solutions (coming soon) will include smart contract development and decentralized applications (DApps).',
+          '💡 From cryptocurrency wallets to blockchain-based supply chain systems, we aim to deliver cutting-edge solutions.',
+          '🚀 Stay tuned for our blockchain services leveraging Ethereum, Solana, and other leading platforms.'
+        ]
+      },
+      {
+        patterns: ['IT consultation', 'tech consulting', 'IT services', 'digital transformation', 'IT solutions'],
+        responses: [
+          '📘 Our IT consultation services help businesses adopt the right technologies for growth and efficiency.',
+          '💡 Whether you need system upgrades, cloud migration, or IT strategy planning, we provide tailored solutions.',
+          '🚀 Partner with us to navigate the complexities of digital transformation with expert guidance and support.'
+        ]
+      },
+      {
+        patterns: ['networking', 'IT networking', 'network setup', 'Wi-Fi installation', 'LAN/WAN solutions'],
+        responses: [
+          '🌐 We provide comprehensive networking solutions, including LAN/WAN setup, Wi-Fi installation, and network security.',
+          '💡 Our services ensure optimized and secure communication across your organization’s devices.',
+          '🚀 From small offices to enterprise setups, we design and implement networks that support seamless operations.'
+        ]
+      },
+      {
+        patterns: ['custom software', 'build software', 'custom apps', 'bespoke software', 'software solutions'],
+        responses: [
+          '💻 We specialize in custom software development tailored to solve your unique business challenges.',
+          '💡 From CRM systems to workflow automation tools, we create scalable solutions using cutting-edge technology.',
+          '🚀 Our agile development process ensures timely delivery of user-friendly software that fits your needs.'
+        ]
+      },
+      {
+        patterns: ['data analytics', 'business insights', 'data reporting', 'analyze data', 'big data'],
+        responses: [
+          '📊 Unlock insights with our data analytics and reporting solutions that turn raw data into actionable strategies.',
+          '💡 We use advanced tools like Power BI, Tableau, and Python to create custom dashboards and reports.',
+          '🚀 From trend analysis to predictive modeling, our services empower data-driven decision-making.'
+        ]
+      },
+      {
+        patterns: ['training', 'IT training', 'technical support', 'IT support', 'training programs'],
+        responses: [
+          '🎓 We offer IT training programs to upskill your team in modern technologies and tools.',
+          '💡 Our support services include troubleshooting, system updates, and ongoing technical assistance.',
+          '🚀 Whether for individuals or businesses, we provide comprehensive training and support tailored to your needs.'
+        ]
+      },
+      {
+        patterns: ['frameworks', 'what frameworks', 'tech stack', 'technologies used', 'stack for development'],
+        responses: [
+          '🚀 Technologies we use:\n• **Frontend**: React.js, Angular, Vue.js, Next.js\n• **Backend**: Node.js, Express.js, Nest.js, Django, Flask\n• **Database**: PostgreSQL, MongoDB, MySQL, Firebase, SQLite\n• **Mobile**: React Native, Flutter\n• **Cloud**: AWS, DigitalOcean, Azure',
+          '💻 Our development stack includes:\n• **Frontend Frameworks**: React.js, Angular, Vue.js\n• **Backend Frameworks**: Express.js, Django, Flask, Laravel\n• **Databases**: PostgreSQL, MongoDB, MySQL\n• **Other Tools**: GraphQL, Prisma, Docker, Kubernetes',
+          '⚙️ Frameworks and tools we work with:\n• **Web**: React.js, Next.js, Angular, Vue.js\n• **Mobile**: Flutter, React Native\n• **Backend**: Node.js, Express.js, Django, Flask\n• **Cloud Services**: AWS, Google Cloud, Firebase\n• **Database**: PostgreSQL, MongoDB, SQLite, MySQL'
+        ]
       }
       
     ];

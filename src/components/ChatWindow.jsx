@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import '../styles/ChatWindow.css';
-import openai from '../config/openai';
 
 const ChatWindow = ({ onClose }) => {
   const [messages, setMessages] = useState([]);
@@ -321,56 +320,10 @@ const ChatWindow = ({ onClose }) => {
     setInputMessage('');
     setIsTyping(true);
 
-    try {
-      let response;
-      const apiKey = import.meta.env.VITE_OPENAI_API_KEY;
-      
-      if (!apiKey || apiKey === 'your_openai_api_key_here') {
-        console.log('Using local responses - OpenAI API key not configured');
-        response = getFAQResponse(userMessage);
-      } else {
-        try {
-          console.log('Attempting to use OpenAI');
-          const aiResponse = await openai.chat.completions.create({
-            model: "gpt-3.5-turbo",
-            messages: [
-              { 
-                role: "system", 
-                content: `You are an AI assistant for LarkIt Tech Ltd, a technology company based in Nairobi. 
-                         Company Information:
-                         - Location: Taj Towers, Upper Hill Road, 7th Floor, Room 2, Nairobi, Kenya
-                         - Contact: Phone: +254 713 570 691, Email: info@larkit.tech
-                         - Services: Web Development, Mobile Apps, UI/UX Design, API Integration, DevOps, Cybersecurity
-                         - Core Values: Innovation, Integrity, Excellence
-                         
-                         Respond professionally and concisely. If asked about technical details, provide specific information.
-                         If unsure about any information, refer to the predefined responses or suggest contacting the team directly.`
-              },
-              { role: "user", content: userMessage }
-            ],
-            temperature: 0.7,
-            max_tokens: 300
-          });
-          response = aiResponse.choices[0].message.content;
-          console.log('OpenAI response received');
-        } catch (openAiError) {
-          console.error('OpenAI Error:', openAiError);
-          response = getFAQResponse(userMessage);
-        }
-      }
-
-      setIsTyping(false);
-      
-      // Start word-by-word animation
-      const animatedResponse = await animateText(response);
-      setMessages(prev => [...prev, { text: animatedResponse, isUser: false }]);
-    } catch (error) {
-      console.error('Error:', error);
-      setIsTyping(false);
-      const errorResponse = "I apologize, but I encountered an error. Please try again.";
-      const animatedError = await animateText(errorResponse);
-      setMessages(prev => [...prev, { text: animatedError, isUser: false }]);
-    }
+    const response = getFAQResponse(userMessage);
+    setIsTyping(false);
+    const animatedResponse = await animateText(response);
+    setMessages(prev => [...prev, { text: animatedResponse, isUser: false }]);
   };
 
   const handleKeyPress = (e) => {
